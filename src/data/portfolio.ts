@@ -33,6 +33,57 @@ export type SocialLink = {
   href: string;
 };
 
+export type SectionIntro = {
+  eyebrow: string;
+  title: string;
+};
+
+export type SectionCopy = SectionIntro & {
+  description: string;
+};
+
+export type HeroContent = {
+  eyebrow: string;
+  titleLead: string;
+  titleAccent: string;
+  akaName: string;
+  description: string;
+  principlesTitle: string;
+  principles: string[];
+  statValue: string;
+  statCaption: string;
+  primaryCtaLabel: string;
+  secondaryCtaLabel: string;
+};
+
+export type ContactContent = {
+  titleLead: string;
+  titlePrefix: string;
+  titleAccent: string;
+  description: string;
+  email: string;
+  secondaryCtaLabel: string;
+};
+
+export const heroContent: HeroContent = {
+  eyebrow: "Junior software engineer",
+  titleLead: "Lai Minh",
+  titleAccent: "Nhut",
+  akaName: "Vincent Lai",
+  description:
+    "Full-stack developer focused on building sleek, high-performance web applications. I craft digital artifacts with architectural precision and midnight inspiration.",
+  principlesTitle: "Night shift principles",
+  principles: [
+    "Elegant systems over visual noise",
+    "Fast interfaces under real-world load",
+    "Polish that survives product scale",
+  ],
+  statValue: "15+",
+  statCaption: "Products influenced by design systems and frontend architecture.",
+  primaryCtaLabel: "View Projects",
+  secondaryCtaLabel: "Read Philosophy",
+};
+
 export const navItems: NavItem[] = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
@@ -53,6 +104,11 @@ export const skills: Skill[] = [
   { name: "Cybersecurity", icon: "shield_lock" },
   { name: "CI/CD", icon: "sync_alt" },
 ];
+
+export const skillsIntro: SectionIntro = {
+  eyebrow: "Expertise",
+  title: "Core Competencies",
+};
 
 export const projects: Project[] = [
   {
@@ -82,6 +138,13 @@ export const projects: Project[] = [
   },
 ];
 
+export const projectsIntro: SectionCopy = {
+  eyebrow: "Curated Work",
+  title: "Functional Artifacts",
+  description:
+    "Selected projects that push the boundaries of interaction, performance, and visual hierarchy.",
+};
+
 export const experienceItems: ExperienceItem[] = [
   {
     period: "2021 - PRES",
@@ -107,8 +170,27 @@ export const experienceItems: ExperienceItem[] = [
   },
 ];
 
+export const experienceIntro: SectionIntro = {
+  eyebrow: "Journey",
+  title: "Professional Evolution",
+};
+
+export const contactContent: ContactContent = {
+  titleLead: "Ready to build",
+  titlePrefix: "something",
+  titleAccent: "eternal?",
+  description:
+    "I'm currently accepting new projects and consulting opportunities. Let's discuss your architectural vision.",
+  email: "architect@nocturnal.dev",
+  secondaryCtaLabel: "Schedule a Call",
+};
+
 export const socialLinks: SocialLink[] = [
   { label: "GitHub", href: "#" },
   { label: "LinkedIn", href: "#" },
   { label: "Twitter", href: "#" },
 ];
+
+
+
+
