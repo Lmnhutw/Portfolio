@@ -36,13 +36,13 @@ export function HeroSection({ content }: HeroSectionProps) {
 
           <aside className="hero-panel" aria-label="Design principles">
             <div className="panel-surface">
-              <span className="panel-label">{content.principlesTitle}</span>
+            <span className="panel-label">{content.principlesTitle}</span>
               <ul className="principles">
                 {content.principles.map((principle) => (
                   <li key={principle}>{principle}</li>
                 ))}
               </ul>
-            </div>
+              </div>
             <div className="stat-card">
               <span className="stat-number">{content.statValue}</span>
               <span className="stat-caption">{content.statCaption}</span>
