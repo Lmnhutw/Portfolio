@@ -5,7 +5,38 @@ export type NavItem = {
 
 export type Skill = {
   name: string;
-  icon: string;
+  icon: SkillIconKey;
+};
+
+export type SkillIconKey =
+  | "csharp"
+  | "javascript"
+  | "typescript"
+  | "java"
+  | "dotnet"
+  | "sqlServer"
+  | "redis"
+  | "angular"
+  | "nextjs"
+  | "bootstrap"
+  | "docker"
+  | "postman"
+  | "git"
+  | "github"
+  | "jira"
+  | "mysql"
+  | "mongodb"
+  | "html"
+  | "css"
+  | "minimalApi"
+  | "signalr"
+  | "unitTesting"
+  | "oop"
+  | "dsa";
+
+export type SkillsCollection = {
+  grid: Skill[];
+  slider: Skill[];
 };
 
 export type Project = {
@@ -94,29 +125,36 @@ export const navItems: NavItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
-export const skills: Skill[] = [
-  { name: "ASP.NET Core", icon: "deployed_code" },
-  { name: "HTML", icon: "html" },
-  { name: "CSS", icon: "css" },
-  //{ name: "AWS", icon: "cloud" },
-  { name: "JavaScript", icon: "Javascript" },
-  { name: "PostgreSQL", icon: "database" },
-  { name: "SQL SERVER", icon: "hub" },
-  { name: "ANGULAR", icon: "speed" },
-  { name: "TypeScript", icon: "shield_lock" },
-  { name: "CI/CD", icon: "sync_alt" },
-  { name: "Java", icon: "database" },
-  { name: "NextJs", icon: "hub" },
-  { name: "Bootstrap", icon: "speed" },
-  { name: "Redis", icon: "shield_lock" },
-  { name: "CI/CD", icon: "sync_alt" },
-  { name: "Docker", icon: "sync_alt" },
-  { name: "Postman", icon: "database" },
-  { name: "Git", icon: "hub" },
-  { name: "Jira", icon: "speed" },
-  { name: "Github", icon: "shield_lock" },
-  { name: "CI/CD", icon: "sync_alt" },
-];
+export const skills: SkillsCollection = {
+  grid: [
+    { name: "C#", icon: "csharp" },
+    { name: "JavaScript", icon: "javascript" },
+    { name: "TypeScript", icon: "typescript" },
+    { name: "Java", icon: "java" },
+    { name: "ASP.NET Core", icon: "dotnet" },
+    { name: "SQL Server", icon: "sqlServer" },
+    { name: "Redis", icon: "redis" },
+    { name: "Angular", icon: "angular" },
+    { name: "NextJs", icon: "nextjs" },
+    { name: "Bootstrap", icon: "bootstrap" },
+    { name: "Docker", icon: "docker" },
+    { name: "Postman", icon: "postman" },
+    { name: "Git", icon: "git" },
+    { name: "Github", icon: "github" },
+    { name: "Jira", icon: "jira" },
+  ],
+  slider: [
+    { name: "MySQL", icon: "mysql" },
+    { name: "MongoDB", icon: "mongodb" },
+    { name: "HTML", icon: "html" },
+    { name: "CSS", icon: "css" },
+    { name: "Minimal API (.NET)", icon: "minimalApi" },
+    { name: "SignalR", icon: "signalr" },
+    { name: "Unit Testing", icon: "unitTesting" },
+    { name: "OOP", icon: "oop" },
+    { name: "Data Structures and Algorithms", icon: "dsa" },
+  ],
+};
 
 export const skillsIntro: SectionIntro = {
   eyebrow: "Expertise",
@@ -203,6 +241,7 @@ export const socialLinks: SocialLink[] = [
   { label: "LinkedIn", href: "#" },
   { label: "Twitter", href: "#" },
 ];
+
 
 
 
