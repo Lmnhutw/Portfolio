@@ -1,12 +1,17 @@
-import { useEffect, useState } from "react";
+﻿import { useEffect, useState } from "react";
 import type { NavItem } from "../../data/portfolio";
+import type { Theme } from "../../theme/useTheme";
 
 type HeaderProps = {
   navItems: NavItem[];
+  onToggleTheme: () => void;
+  theme: Theme;
 };
 
-export function Header({ navItems }: HeaderProps) {
+export function Header({ navItems, onToggleTheme, theme }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const nextTheme = theme === "dark" ? "light" : "dark";
+  const themeIcon = theme === "dark" ? "light_mode" : "dark_mode";
 
   useEffect(() => {
     const closeMenu = () => setMenuOpen(false);
@@ -34,6 +39,21 @@ export function Header({ navItems }: HeaderProps) {
           </div>
 
           <div className="nav-actions">
+            <button
+              type="button"
+              className="theme-toggle"
+              aria-label={`Current theme: ${theme}. Activate ${nextTheme} theme.`}
+              title={`Activate ${nextTheme} theme`}
+              onClick={onToggleTheme}
+            >
+              <span className="theme-toggle__icon-shell" aria-hidden="true">
+                <span className="material-symbols-outlined theme-toggle__icon">{themeIcon}</span>
+              </span>
+              <span className="theme-toggle__copy">
+                <span className="theme-toggle__label">Theme</span>
+                <span className="theme-toggle__value">{theme === "dark" ? "Dark" : "Light"}</span>
+              </span>
+            </button>
             <a className="button button-primary nav-cta desktop-cta" href="#contact">
               Get in Touch
             </a>
@@ -75,4 +95,3 @@ export function Header({ navItems }: HeaderProps) {
     </header>
   );
 }
-
