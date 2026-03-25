@@ -44,7 +44,7 @@ export function HeroSection({ content }: HeroSectionProps) {
               </ul>
               </div>
             <div className="stat-card">
-              <span className="stat-number">{content.statValue}</span>
+              <span className="stat-number">{content.statValue}</span><span className="stat-text"> {content.statText}</span>
               <span className="stat-caption">{content.statCaption}</span>
             </div>
           </aside>

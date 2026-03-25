@@ -82,6 +82,7 @@ export type HeroContent = {
   principlesTitle: string;
   principles: string[];
   statValue: string;
+  statText: string;
   statCaption: string;
   primaryCtaLabel: string;
   secondaryCtaLabel: string;
@@ -111,7 +112,8 @@ export const heroContent: HeroContent = {
     "Design interfaces that remain responsive and reliable under real-world conditions",
     "Maintain a level of quality and polish that holds as the product scales",
   ],
-  statValue: "1.5+ year of experience",
+  statValue: "1.5+",
+  statText: "year of experience",
   statCaption: "Building and contributing to products through backend development, and cross-functional collaboration.",
   primaryCtaLabel: "View Projects",
   secondaryCtaLabel: "Read Philosophy",
@@ -190,30 +192,22 @@ export const projects: Project[] = [
 ];
 
 export const projectsIntro: SectionCopy = {
-  eyebrow: "Curated Work",
-  title: "Functional Artifacts",
+  eyebrow: "Featured Projects",
+  title: "Deliverables",
   description:
-    "Selected projects that push the boundaries of interaction, performance, and visual hierarchy.",
+    "A selection of projects that highlighting my experience in building scalable, high-performance applications with a strong focus on usability and clean design. These works reflect how I approach real-world problems, from concept to implementation.",
 };
 
 export const experienceItems: ExperienceItem[] = [
   {
-    period: "2021 - PRES",
-    title: "Senior Full-Stack Architect",
-    company: "Lumina Digital Labs",
-    description:
-      "Leading a team of 8 developers in constructing scalable microservices. Reduced deployment time by 40% using automated CI/CD pipelines and infrastructure as code.",
-    active: true,
-  },
-  {
-    period: "2018 - 2021",
-    title: "Web Applications Engineer",
-    company: "Prism Global Systems",
+    period: " Sep 2024 - Present",
+    title: "Junior Software Engineer",
+    company: "TPF",
     description:
       "Developed a core UI library utilized by 15+ internal products. Optimized frontend performance resulting in a 2.5 second reduction in Largest Contentful Paint.",
   },
   {
-    period: "2016 - 2018",
+    period: "Jul 2024 - Sep 2024",
     title: "Junior UI Developer",
     company: "Nova Tech Solutions",
     description:
@@ -223,7 +217,7 @@ export const experienceItems: ExperienceItem[] = [
 
 export const experienceIntro: SectionIntro = {
   eyebrow: "Journey",
-  title: "Professional Evolution",
+  title: "Professional Experience",
 };
 
 export const contactContent: ContactContent = {
@@ -231,14 +225,14 @@ export const contactContent: ContactContent = {
   titlePrefix: "something",
   titleAccent: "eternal?",
   description:
-    "I'm currently accepting new projects and consulting opportunities. Let's discuss your architectural vision.",
-  email: "architect@nocturnal.dev",
+  "I'm currently open to new opportunities where I can contribute and continue growing. Feel free to reach out to me via email or schedule a call to discuss potential collaborations.",
+  email: "lmnhut0211@gmail.com",
   secondaryCtaLabel: "Schedule a Call",
 };
 
 export const socialLinks: SocialLink[] = [
-  { label: "GitHub", href: "#" },
-  { label: "LinkedIn", href: "#" },
+  { label: "GitHub", href: "https://github.com/Lmnhutw" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/minhnhut0211" },
   { label: "Twitter", href: "#" },
 ];
 

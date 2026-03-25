@@ -24,7 +24,7 @@ export function ContactSection({ content }: ContactSectionProps) {
                 </span>
                 {content.email}
               </a>
-              <a className="button button-tertiary" href="#about">
+              <a className="button button-tertiary" href="tel:+84773066149">
                 {content.secondaryCtaLabel}
               </a>
             </div>
