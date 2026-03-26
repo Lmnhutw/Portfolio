@@ -10,10 +10,10 @@ export type Skill = {
 
 export type SkillIconKey =
   | "csharp"
+  | "dotnet"
   | "javascript"
   | "typescript"
   | "java"
-  | "dotnet"
   | "sqlServer"
   | "redis"
   | "angular"
@@ -112,7 +112,7 @@ export const heroContent: HeroContent = {
     "Design interfaces that remain responsive and reliable under real-world conditions",
     "Maintain a level of quality and polish that holds as the product scales",
   ],
-  statValue: "1.5+",
+  statValue: "1.6+",
   statText: "year of experience",
   statCaption: "Building and contributing to products through backend development, and cross-functional collaboration.",
   primaryCtaLabel: "View Projects",
@@ -130,10 +130,10 @@ export const navItems: NavItem[] = [
 export const skills: SkillsCollection = {
   grid: [
     { name: "C#", icon: "csharp" },
+    { name: "ASP.NET Core", icon: "dotnet" },
     { name: "JavaScript", icon: "javascript" },
     { name: "TypeScript", icon: "typescript" },
     { name: "Java", icon: "java" },
-    { name: "ASP.NET Core", icon: "dotnet" },
     { name: "SQL Server", icon: "sqlServer" },
     { name: "Redis", icon: "redis" },
     { name: "Angular", icon: "angular" },
@@ -165,30 +165,26 @@ export const skillsIntro: SectionIntro = {
 
 export const projects: Project[] = [
   {
-    id: "aether-capital",
-    category: "01 / FINTECH",
-    title: "Aether Capital",
-    description:
-      "A high-frequency trading dashboard designed for minimal latency and maximum clarity. Built with React and WebSockets for real-time data streaming.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA9hMFTr9IZT8c3HlUEmd1SzIYcfa1Dv4rUAQMJVu7pM_feuiKkUEbj4OvndOTXir4SgkeiB652hii1wb4sNTMGuwnmjxTq3jyV0JwAQDbkmbIyHEm1Q9-sSmmJSMPbCIvuuDtErpgbV3zAYN-d-35dDJovxBlgXb8TFUBmXn8OxIOqGWd8V3Nq0ijrnW2k8vcoF2B8pMjZf_RhHeP2yBvP-2Ji7TsD7eCM6MFvxfuFComRrNMyMfT0vCO_Co5XLgzNJtALXQSVSom7",
-    imageAlt: "Dark trading dashboard with live price and volume charts.",
-    primaryAction: "Live Demo",
-    secondaryAction: "Case Study",
+    "id": "tpf-group",
+    "category": "01 / EXPERIENCE",
+    "title": "Junior .NET Developer",
+    "description": "- Refactored core email processing functions to use dynamic JSON-driven field retrieval cutting development and testing time for new fields about 65%.  - Developed entitlement-based sidebar content and CTA sliders using Scriban and JavaScript, enabling dynamic multi-condition rendering and reducing update time by over 50% - Assisted in debugging server-side logic, SQL queries, and authentication flows as part of production support. - Worked in an Agile/Scrum team with deployment, QA, and database teams to triage, and resolve critical issues; supported seniors on complex problems.- Collaborated with overseas and local deployment teams to gather requirements, align on technical specifications, and deliver a new “club” feature.",
+    "image": "https://via.placeholder.com/600x400?text=TPF+Group",
+    "imageAlt": "Email system dashboard and responsive UI components.",
+    "primaryAction": "View Experience",
+    "secondaryAction": "View Details"
   },
   {
-    id: "onyx-retail",
-    category: "02 / LIFESTYLE",
-    title: "Onyx Retail",
-    description:
-      "A minimalist e-commerce ecosystem focused on premium tactile feedback and seamless checkout journeys with a headless Shopify architecture.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuClE_3jIn9Jq6tP08GvdQZOdF76wuZeIxNvHi3x-ZU5sNnmYrl0IVxqe7aXZXYSJyxm7Qp-W7wKYXSSFMFoqeGKdDSDvccR1ySI0eAB_Mxggy2V1O4Uw0xgPsS53fMyGidYcXSZxROq7Ukhsgaws7c2x_McljA00dSMZaovp_PKnf_wsngR7N8rMxTPWQMPHZjM6cYySYLGFHxKNZ0jxIL8kBS58CDxinm-5CargnHV_BSWYIXL4YG4z4XeVtn2vXOG5vgaWQOrBDAE",
-    imageAlt: "Minimalist product card with soft shadows and a premium white finish.",
-    primaryAction: "View Details",
-    secondaryAction: "Git Repo",
-    reverse: true,
-  },
+    "id": "catena-intern",
+    "category": "02 / EXPERIENCE",
+    "title": "Software Engineer Intern",
+    "description": "\n- Researched .NET technologies and implemented SignalR for real-time communication.\n- Cloned and analyzed a basic real-time chat web app to understand its architecture and functionality.\n- Conducted business analysis (BA) and designed SQL queries to support chat application features.\n- Assisted with various development tasks, including improving UI responsiveness.",
+    "image": "https://via.placeholder.com/600x400?text=Catena+Technology",
+    "imageAlt": "Real-time chat application interface.",
+    "primaryAction": "View Experience",
+    "secondaryAction": "Project Details",
+    "reverse": true
+  }
 ];
 
 export const projectsIntro: SectionCopy = {
@@ -203,15 +199,13 @@ export const experienceItems: ExperienceItem[] = [
     period: " Sep 2024 - Present",
     title: "Junior Software Engineer",
     company: "TPF",
-    description:
-      "Developed a core UI library utilized by 15+ internal products. Optimized frontend performance resulting in a 2.5 second reduction in Largest Contentful Paint.",
+    description: "Refactored core email processing functions to use dynamic JSON-driven field retrieval cutting development and testing time for new fields about 65%.  - Developed entitlement-based sidebar content and CTA sliders using Scriban and JavaScript, enabling dynamic multi-condition rendering and reducing update time by over 50%.- Assisted in debugging server-side logic, SQL queries, and authentication flows as part of production support. - Designed and contributed to the creation of marketing EDMs, ensuring responsive design and alignment with brand standards across major email clients with MailChimp.- Designed and maintained a Scriban-based email templating system with dynamic parameter support, enabling consistent and reusable templates across campaigns. - Worked in an Agile/Scrum team with deployment, QA, and database teams to triage, and resolve critical issues; supported seniors on complex problems.- Collaborated with overseas and local deployment teams to gather requirements, align on technical specifications, and deliver a new “club” feature.",
   },
   {
     period: "Jul 2024 - Sep 2024",
-    title: "Junior UI Developer",
-    company: "Nova Tech Solutions",
-    description:
-      "Contributed to the development of responsive marketing sites and client dashboards, sharpening a foundation in design systems and modern JavaScript frameworks.",
+    title: "Intern Software Engineer",
+    company: "Catena Technology Co., LTD",
+    description: "Researched .NET technologies and implemented SignalR for real-time communication.\n- Cloned and analyzed a basic real-time chat web app to understand its architecture and functionality.\n- Conducted business analysis (BA) and designed SQL queries to support chat application features.\n- Assisted with various development tasks, including improving UI responsiveness.",
   },
 ];
 
@@ -233,7 +227,6 @@ export const contactContent: ContactContent = {
 export const socialLinks: SocialLink[] = [
   { label: "GitHub", href: "https://github.com/Lmnhutw" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/minhnhut0211" },
-  { label: "Twitter", href: "#" },
 ];
 
 

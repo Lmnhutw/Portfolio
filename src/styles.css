@@ -369,7 +369,7 @@ img {
 .brand {
   color: var(--text-strong);
   font-family: "Noto Serif", serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
   font-weight: 700;
   letter-spacing: -0.04em;
@@ -393,7 +393,7 @@ img {
 
 .nav-link {
   color: var(--text-soft);
-  font-size: 0.9rem;
+  font-size: 1rem;
   transition: color var(--transition);
 }
 
@@ -1040,6 +1040,32 @@ img {
   overflow-wrap: anywhere;
 }
 
+.project-description {
+  white-space: pre-line;
+}
+
+.project-description__toggle {
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--gold);
+  font-weight: 700;
+  line-height: inherit;
+  cursor: pointer;
+  transition: color var(--transition), opacity var(--transition);
+}
+
+.project-description__toggle:hover {
+  color: var(--text-strong);
+}
+
+.project-description__toggle:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 4px;
+  border-radius: 999px;
+}
+
 .project-actions {
   gap: 14px;
   margin-top: 28px;
@@ -1104,6 +1130,7 @@ img {
   color: var(--text-soft);
   line-height: 1.8;
   overflow-wrap: anywhere;
+  white-space: pre-line;
 }
 
 .contact-card {
@@ -1166,7 +1193,7 @@ img {
 .footer-brand {
   margin: 0;
   color: var(--gold);
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.06em;
 }
@@ -1174,7 +1201,7 @@ img {
 .footer-copy {
   margin: 0;
   color: var(--text-soft);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   overflow-wrap: anywhere;
 }
 
@@ -1184,7 +1211,7 @@ img {
 
 .footer-links a {
   color: var(--text-soft);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   transition: color var(--transition);
 }
 
