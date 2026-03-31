@@ -112,7 +112,7 @@ export const heroContent: HeroContent = {
     "Design interfaces that remain responsive and reliable under real-world conditions",
     "Maintain a level of quality and polish that holds as the product scales",
   ],
-  statValue: "1.5+",
+  statValue: "1.6+",
   statText: "year of experience",
   statCaption: "Building and contributing to products through backend development, and cross-functional collaboration.",
   primaryCtaLabel: "View Projects",
